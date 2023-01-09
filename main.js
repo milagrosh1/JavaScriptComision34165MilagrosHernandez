@@ -14,7 +14,7 @@ if((nombreIngresado !="") && (apellidoIngresado !=""  )){
     alert("error: Ingresar nombre y apellido para acceder al servicio de cambio de divisas");
 }
     
-var edad = prompt("ingrese su edad");
+let edad = prompt("ingrese su edad");
 if (edad >=18)
 {
     alert("Ya podes acceder al servicio de cambio de divisas")
@@ -28,15 +28,16 @@ if(edad <18)
 
 
 function convertir() {
-    var valore = parseInt(document.getElementById("valor").value);
-    var resultado = 0;
-    var dolar = 354;
-    var euro = 356;
+   let valore = parseInt(document.getElementById("valor").value);
+    let resultado = 0;
+    let dolar = 354;
+    let euro = 356;
     if (document.getElementById("uno").checked){ 
         resultado = valore / dolar;
         alert("el cambio de pesos a dolares es: $" + resultado.toFixed(2));
 
     }
+    
 
     if (document.getElementById("dos").checked){ 
         resultado = valore / euro;
